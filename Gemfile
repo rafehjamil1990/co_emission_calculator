@@ -22,8 +22,6 @@ gem "jbuilder"
 gem "roo", "~> 2.10.0"
 # for bulk importing records with validation
 gem "activerecord-import"
-# for handling conversions
-gem "measured"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 

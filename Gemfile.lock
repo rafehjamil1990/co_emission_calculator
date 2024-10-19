@@ -133,8 +133,6 @@ GEM
       net-smtp
     marcel (1.0.4)
     matrix (0.4.2)
-    measured (3.1.0)
-      activesupport (>= 5.2)
     method_source (1.1.0)
     mini_mime (1.1.5)
     minitest (5.25.1)
@@ -326,7 +324,6 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
-  measured
   pg
   pry
   puma (>= 5.0)
