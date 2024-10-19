@@ -35,9 +35,9 @@ module EmissionDataImports
 
     def convert_to_grams(quantity, unit)
       if unit.include?("kg")
-        Measured::Weight.new(quantity, "kg").convert_to("g")
-      elsif unit.include?("mg")
-        Measured::Weight.new(quantity, "mg").convert_to("g")
+        (quantity * 1000).to_d
+      elsif unit.include?("mg") & quantity.positive?
+        (quantity / 1000).to_d
       elsif unit.include?("ppm")
         (quantity / 1001.142303).to_d
       else
