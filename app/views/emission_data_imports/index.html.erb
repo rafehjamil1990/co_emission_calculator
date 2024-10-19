@@ -1,0 +1,21 @@
+<div class="container text-center mx-auto bg-body-secondary mt-5 py-5 rounded-3">
+  <h1>Emission Data</h1>
+
+  <div class="container mt-4">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Source</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Unit</th>
+          <th scope="col">Emission Factor</th>
+          <th scope="col">CO2 Emission</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render @emission_data_imports %>
+      </tbody>
+    </table>
+  </div>
+</div>
